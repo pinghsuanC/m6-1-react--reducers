@@ -21,7 +21,6 @@ for (let r = 0; r < row.length; r++) {
 
 router.get("/api/seat-availability", async (req, res) => {
   await delay(Math.random() * 3000);
-
   return res.json({
     seats: seats,
     numOfRows: 8,
